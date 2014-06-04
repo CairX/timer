@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Timer</title>
+        <link href="style.css" type="text/css" rel="stylesheet" />
+        <script src="timer.js"></script>
+    </head>
+    <body>
+        <div id="time">00:00:000</div>
+        <!--button id="start">Start</button-->
+        <script>
+            var time = document.getElementById('time');
+            var timer = new Timer();
+
+            window.onkeypress = function(event) {
+                console.log(event);
+                if (event.charCode == 32) {
+                    timer.start();
+                    window.setInterval(update, 10);
+                }
+            };
+
+            function update() {
+                time.innerHTML = TimeFormatter.format(timer.current(), '%%M:%S:%f');
+            };
+        </script>
+    </body>
+</html>
