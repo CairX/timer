@@ -1,20 +1,20 @@
 @font-face {
 	font-family: 'Roboto';
-	src: url('fonts/Roboto-Regular.ttf');
+	src: url('fonts/roboto.ttf');
 }
 @font-face {
 	font-family: 'Roboto';
-	src: url('fonts/Roboto-Bold.ttf');
+	src: url('fonts/roboto-bold.ttf');
 	font-weight: bold;
 }
 @font-face {
 	font-family: 'Roboto';
-	src: url('fonts/Roboto-Thin.ttf');
+	src: url('fonts/roboto-thin.ttf');
 	font-weight: lighter;
 }
 @font-face {
 	font-family: 'Roboto';
-	src: url('fonts/Roboto-Italic.ttf');
+	src: url('fonts/roboto-italic.ttf');
 	font-style: italic;
 }
 
